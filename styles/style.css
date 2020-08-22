@@ -47,6 +47,7 @@ main {
   margin: 2.5% 10%;
 }
 
+/* typography guide */
 h1 {
   font-family: 'Karla', sans-serif;
   font-weight: bold;
@@ -82,6 +83,7 @@ p {
   font-size: 1.25rem;
 }
 
+/* navbar styling */
 nav {
   height: 20vh;
   margin: 0 5%;
@@ -94,8 +96,15 @@ nav img {
   height: 100%;
 }
 
+.links a {
+  color: #32161F;
+}
+/* navbar styling end */
+
+/* header styling */
 header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 }
@@ -109,3 +118,67 @@ header section {
   margin: 0 5%;
 }
 
+#name {
+  color: #CE796B;
+}
+/* header styling end */
+
+/* card styling */
+.cards {
+  /*border: 1px solid red;*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-row {
+  margin-bottom: 5%;
+}
+
+.card-container {
+  /*border: 1px solid blue;*/
+  border-radius: 10px;
+  width: 45%;
+  padding-bottom: 45%;
+  margin-bottom: 5%;
+  position: relative;
+}
+
+.card-container img {
+  width: 100%;
+  border-radius: 10px;
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+}
+
+.card-container .card-overlay {
+  border-radius: 10px;
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #D2C1C5;
+}
+
+.card-container:hover .card-overlay {
+  opacity: .9;
+  cursor: pointer;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  text-align: center;
+}
+
+/* card overlay background-colors: */
+#pigpocket {
+  background-color:  #D2C1C5;
+}
