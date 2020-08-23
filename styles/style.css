@@ -127,20 +127,8 @@ nav a, nav img {
 /* navbar styling end */
 
 /* header styling */
-header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-}
-
 header img {
-  width: 50%;
-}
-
-header section {
-  width: 40%;
-  margin: 0 5%;
+  width: 100%;
 }
 
 #name {
@@ -172,28 +160,11 @@ header section {
 }
 /* header styling end */
 
-/* about.html header styling */
-/* about.html header styling end */
-
 /* card styling */
-.cards {
-  /*border: 1px solid red;*/
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.card-row {
-  margin-bottom: 5%;
-}
-
 .card-container {
-  /*border: 1px solid blue;*/
   border-radius: 10px;
-  width: 45%;
-  padding-bottom: 45%;
+  width: 100%;
+  padding-bottom: 100%;
   margin-bottom: 5%;
   position: relative;
 }
@@ -251,6 +222,7 @@ header section {
 }
 /* card overlay ends */
 
+/* ABOUT.HTML CSS */
 /* about.html org links */
 .organizations a:hover {
   transition: .3s ease;
@@ -278,6 +250,51 @@ header section {
 /* about.html org links end */
 
 /* about.html illustrations section */
+.illustrations-container img {
+  width: 100%;
+  margin-bottom: 5%;
+  border-radius: 10px;
+}
+/* about.html illustrations section end */
+
+@media (min-width: 1000px) {
+  /* header styling */
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  header img {
+    width: 50%;
+  }
+  
+  header section {
+    width: 40%;
+    margin: 0 5%;
+  }
+  /* header styling end */
+
+  /* card styling */
+  .cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .card-container {
+    border-radius: 10px;
+    width: 45%;
+    padding-bottom: 45%;
+    margin-bottom: 5%;
+    position: relative;
+  }
+  /* card styling end */
+
+  /* about.html illustrations section */
 .illustrations-container {
   display: flex;
   flex-direction: row;
@@ -290,4 +307,6 @@ header section {
   width: 30%;
   margin-bottom: 5%;
   border-radius: 10px;
+}
+/* about.html illustrations section end */
 }
