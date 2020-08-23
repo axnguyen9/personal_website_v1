@@ -83,6 +83,12 @@ p {
   font-size: 1.25rem;
 }
 
+li {
+  font-family: 'Martel', serif;
+  font-weight: normal;
+  font-size: 1.125rem;
+}
+
 /* navbar styling */
 nav {
   font-family: 'Karla', sans-serif;
@@ -96,7 +102,7 @@ nav {
   align-items: center;
 }
 
-nav img {
+nav a, nav img {
   height: 100%;
 }
 
@@ -111,7 +117,12 @@ nav img {
 }
 
 .links a:hover {
+  transition: .3s ease;
   color: #188FA7;
+}
+
+#current {
+  color: #842640;
 }
 /* navbar styling end */
 
@@ -138,7 +149,7 @@ header section {
 
 #email {
   text-decoration: underline;
-  transition: .2s ease;
+  transition: .3s ease;
 }
 
 #email:hover {
@@ -160,6 +171,9 @@ header section {
   width: 1.5rem;
 }
 /* header styling end */
+
+/* about.html header styling */
+/* about.html header styling end */
 
 /* card styling */
 .cards {
@@ -234,4 +248,46 @@ header section {
 
 #artwall {
   background-color: #E9EEF2;
+}
+/* card overlay ends */
+
+/* about.html org links */
+.organizations a:hover {
+  transition: .3s ease;
+}
+
+#wicc:hover {
+  color: #82e7d5;
+}
+
+#sis:hover {
+  color: #ef8e80;
+}
+
+#pe:hover {
+  color: #df9011;
+}
+
+#ewh:hover {
+  color: #2d6694;
+}
+
+#rtc:hover {
+  color: #3cb7e9;
+}
+/* about.html org links end */
+
+/* about.html illustrations section */
+.illustrations-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.illustrations-container img {
+  width: 30%;
+  margin-bottom: 5%;
+  border-radius: 10px;
 }
