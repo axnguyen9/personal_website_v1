@@ -120,11 +120,10 @@ nav a, nav img {
 
 .links {
   width: 25%;
-  display: flex;
-  justify-content: space-between;
 }
 
 .links a {
+  margin: 0 5%;
   color: #E7AD99;
 }
 
@@ -290,6 +289,14 @@ header img {
 /* about.html illustrations section end */
 
 @media (min-width: 1000px) {
+  /* navbar styling */
+  .links {
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+  }
+  /* navbar styling end */
+
   /* header styling */
   #clouds {
     position: absolute;
@@ -335,18 +342,18 @@ header img {
   /* card styling end */
 
   /* about.html illustrations section */
-.illustrations-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
+  .illustrations-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-.illustrations-container img {
-  width: 30%;
-  margin-bottom: 5%;
-  border-radius: 10px;
-}
-/* about.html illustrations section end */
+  .illustrations-container img {
+    width: 30%;
+    margin-bottom: 5%;
+    border-radius: 10px;
+  }
+  /* about.html illustrations section end */
 }
