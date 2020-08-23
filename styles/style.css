@@ -40,15 +40,21 @@
 }
 
 body {
+  margin: 0;
   background-color: #F5F5F5;
 }
 
 main {
+  margin: 15% 10% 10% 10%;
+}
+
+header {
   margin: 2.5% 10%;
 }
 
 /* typography guide */
 h1 {
+  margin: 1rem 0;
   font-family: 'Karla', sans-serif;
   font-weight: bold;
   font-size: 4rem;
@@ -89,6 +95,11 @@ li {
   font-size: 1.125rem;
 }
 
+.light-pink {
+  color: #ECD7CF;
+}
+/* typography guide end */
+
 /* navbar styling */
 nav {
   font-family: 'Karla', sans-serif;
@@ -96,7 +107,8 @@ nav {
   font-size: 1.5rem;
   color: #32161F;
   height: 20vh;
-  margin: 2.5% 5%;
+  margin: 0 5% 2.5% 5%;
+  padding-top: 2.5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -107,13 +119,13 @@ nav a, nav img {
 }
 
 .links {
-  width: 50%;
-  text-align: right;
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .links a {
-  margin: 0 5%;
-  color: #32161F;
+  color: #E7AD99;
 }
 
 .links a:hover {
@@ -127,6 +139,26 @@ nav a, nav img {
 /* navbar styling end */
 
 /* header styling */
+.gradient-container {
+  background: rgb(17,62,106);
+  background: linear-gradient(180deg, rgba(17,62,106,1) 0%, rgba(93,46,78,1) 50%, rgba(132,38,64,1) 80%);
+}
+
+.clouds-container {
+  position: relative;
+}
+
+#clouds {
+  position: absolute;
+  top: 95%;
+  width: 100vw;
+  z-index: 999;
+}
+
+header {
+  padding-bottom: 20%;
+}
+
 header img {
   width: 100%;
 }
@@ -259,7 +291,15 @@ header img {
 
 @media (min-width: 1000px) {
   /* header styling */
+  #clouds {
+    position: absolute;
+    top: 90%;
+    width: 100vw;
+    z-index: 999;
+  }
+
   header {
+    padding-bottom: 10%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
