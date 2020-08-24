@@ -53,11 +53,13 @@ header {
 }
 
 /* typography guide */
+
 h1 {
   margin: 1rem 0;
   font-family: 'Karla', sans-serif;
   font-weight: bold;
   font-size: 4rem;
+  width: 100%;
 }
 
 h2 {
