@@ -289,6 +289,7 @@ header img {
 /* about.html illustrations section end */
 
 @media (max-width: 480px) {
+  /*
   h1 {
     font-size: 3rem;
   }
@@ -307,7 +308,7 @@ header img {
   
   li {
     font-size: .75rem;
-  }
+  }*/
 
   /* navbar styling */
   nav {
