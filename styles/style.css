@@ -79,12 +79,6 @@ a {
   color: black;
 }
 
-h4 {
-  font-family: 'Karla', sans-serif;
-  font-weight: normal;
-  font-size: 1.125rem;
-}
-
 p {
   font-family: 'Martel', serif;
   font-weight: normal;
@@ -109,7 +103,7 @@ nav {
   font-size: 1.5rem;
   color: #32161F;
   height: 20vh;
-  margin: 0 5% 2.5% 5%;
+  margin: 0 2.5% 2.5% 2.5%;
   padding-top: 2.5%;
   display: flex;
   justify-content: space-between;
@@ -129,7 +123,7 @@ nav a, nav img {
   color: #E7AD99;
 }
 
-.links a:hover, .links a:active {
+.links a:hover {
   transition: .3s ease;
   color: #ECD7CF;
 }
@@ -220,7 +214,7 @@ header img {
   transition: .5s ease;
 }
 
-.card-container:hover .card-overlay, .card-container:active .card-overlay {
+.card-container:hover .card-overlay {
   opacity: .9;
   cursor: pointer;
 }
@@ -258,7 +252,7 @@ header img {
 
 /* ABOUT.HTML CSS */
 /* about.html org links */
-.organizations a:hover, .organizations a:active {
+.organizations a:hover {
   transition: .3s ease;
 }
 
@@ -290,6 +284,28 @@ header img {
   border-radius: 10px;
 }
 /* about.html illustrations section end */
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 3rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  h3 {
+    font-size: 1.125rem;
+  }
+  
+  p {
+    font-size: 1rem;
+  }
+  
+  li {
+    font-size: .75rem;
+  }
+}
 
 @media (min-width: 1000px) {
   /* navbar styling */
