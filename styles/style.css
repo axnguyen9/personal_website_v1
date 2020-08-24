@@ -305,6 +305,16 @@ header img {
   li {
     font-size: .75rem;
   }
+
+  /* navbar styling */
+  nav {
+    font-size: 1.125rem;
+  }
+
+  .text {
+    display: none;
+  }
+
 }
 
 @media (min-width: 1000px) {
