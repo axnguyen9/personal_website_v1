@@ -45,7 +45,7 @@ body {
 }
 
 main {
-  margin: 15% 10% 10% 10%;
+  margin: 15% 10% 5% 10%;
 }
 
 header {
@@ -58,7 +58,7 @@ h1 {
   margin: 1rem 0;
   font-family: 'Karla', sans-serif;
   font-weight: bold;
-  font-size: 4.5vw;
+  font-size: 4rem;
   width: 100%;
   color: #842640;
 }
@@ -66,7 +66,7 @@ h1 {
 h2 {
   font-family: 'Karla', sans-serif;
   font-weight: bold;
-  font-size: 2.5vw;
+  font-size: 2.25rem;
 }
 
 h3 {
@@ -90,6 +90,10 @@ li {
   font-family: 'Martel', serif;
   font-weight: normal;
   font-size: 1.125rem;
+}
+
+blockquote {
+  font-family: 'Martel', serif;
 }
 
 .light-pink {
@@ -253,6 +257,39 @@ header img {
 }
 /* card overlay ends */
 
+/* footer styling */
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+#footer-graphic {
+  width: 100%;
+}
+
+.footer-container {
+  background-color: #495867;
+  color: #F5F5F5;
+  text-align: center;
+}
+
+#footer-socials {
+  justify-content: center;
+}
+
+#footer-socials a {
+  margin: 0 1rem;
+}
+
+#back-to-top {
+  color: #E7AD99;
+}
+
+#back-to-top:hover {
+  color: #ECD7CF;
+}
+/* footer styling end */
+
 /* ABOUT.HTML CSS */
 /* about.html org links */
 .organizations a:hover {
@@ -280,6 +317,12 @@ header img {
 }
 /* about.html org links end */
 
+/* about.html extracurriculars section */
+.extracurriculars {
+  margin-bottom: 5%;
+}
+/* about.html extracurriculars section end */
+
 /* about.html illustrations section */
 .illustrations-container img {
   width: 100%;
@@ -287,6 +330,13 @@ header img {
   border-radius: 10px;
 }
 /* about.html illustrations section end */
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  html,
+  body {
+    scroll-behavior: smooth;
+  }
+}
 
 @media (max-width: 480px) {
   h1 {
