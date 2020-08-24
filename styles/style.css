@@ -58,14 +58,15 @@ h1 {
   margin: 1rem 0;
   font-family: 'Karla', sans-serif;
   font-weight: bold;
-  font-size: 4rem;
+  font-size: 4.5vw;
   width: 100%;
+  color: #842640;
 }
 
 h2 {
   font-family: 'Karla', sans-serif;
   font-weight: bold;
-  font-size: 2.25rem;
+  font-size: 2.5vw;
 }
 
 h3 {
