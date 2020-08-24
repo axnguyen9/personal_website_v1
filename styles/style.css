@@ -114,12 +114,9 @@ nav a, nav img {
   height: 100%;
 }
 
-.links {
-  width: 25%;
-}
-
 .links a {
-  margin: 0 5%;
+  display: block;
+  padding: .25rem 0;
   color: #E7AD99;
 }
 
@@ -179,6 +176,7 @@ header img {
 }
 
 .socials a {
+  display: block;
   margin-right: 2.5%;
 }
 
