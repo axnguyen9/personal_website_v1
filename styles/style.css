@@ -52,7 +52,7 @@ header {
   margin: 2.5% 10%;
 }
 
-/* typography guide */
+/* style guide */
 
 h1 {
   margin: 1rem 0;
@@ -100,7 +100,7 @@ li {
 .light-pink {
   color: #ECD7CF;
 }
-/* typography guide end */
+/* style guide end */
 
 /* navbar styling */
 nav {
@@ -131,11 +131,11 @@ nav a, nav img {
 
 .links a:hover, .links a:active {
   transition: .3s ease;
-  color: #188FA7;
+  color: #ECD7CF;
 }
 
 #current {
-  color: #842640;
+  color: #188FA7;
 }
 /* navbar styling end */
 
