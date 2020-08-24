@@ -114,6 +114,10 @@ nav a, nav img {
   height: 100%;
 }
 
+.links {
+  padding-right: 2rem;
+}
+
 .links a {
   display: block;
   padding: .25rem 0;
