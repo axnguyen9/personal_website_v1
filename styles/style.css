@@ -80,6 +80,11 @@ a {
   color: black;
 }
 
+a:hover {
+  transition: .3s ease;
+  color: #188FA7;
+}
+
 p {
   font-family: 'Martel', serif;
   font-weight: normal;
@@ -131,11 +136,11 @@ nav a, nav img {
 
 .links a:hover {
   transition: .3s ease;
-  color: #ECD7CF;
+  color: #188FA7;
 }
 
 #current {
-  color: #188FA7;
+  border-bottom: 2px solid #E7AD99;
 }
 /* navbar styling end */
 
@@ -147,6 +152,13 @@ nav a, nav img {
 
 .clouds-container {
   position: relative;
+}
+
+#resume-clouds {
+  position: absolute;
+  top: 87%;
+  width: 100vw;
+  z-index: 999;
 }
 
 #clouds {
@@ -222,6 +234,7 @@ header img {
 }
 
 .card-container:hover .card-overlay {
+  color: black;
   opacity: .9;
   cursor: pointer;
 }
@@ -292,8 +305,28 @@ footer {
 
 /* ABOUT.HTML CSS */
 /* about.html org links */
+.extracurriculars {
+  margin-bottom: 10%;
+}
+
+.organizations a {
+  display: block;
+  margin: 2rem 0;
+}
+
 .organizations a:hover {
   transition: .3s ease;
+}
+
+.organizations h2 {
+  display: inline-block;
+  margin: 0 1rem 0 0;
+  margin-right: 1rem;
+}
+
+.organizations img {
+  display: inline-block;
+  width: 1.5rem;
 }
 
 #wicc:hover {
@@ -317,12 +350,6 @@ footer {
 }
 /* about.html org links end */
 
-/* about.html extracurriculars section */
-.extracurriculars {
-  margin-bottom: 5%;
-}
-/* about.html extracurriculars section end */
-
 /* about.html illustrations section */
 .illustrations-container img {
   width: 100%;
@@ -330,6 +357,33 @@ footer {
   border-radius: 10px;
 }
 /* about.html illustrations section end */
+
+/* RESUME.html CSS */
+#download-resume {
+  color: #ECD7CF;
+}
+
+#here {
+  color: #CE796B;
+  text-decoration: underline;
+}
+
+#here:hover {
+  transition: .3s ease;
+  color: #188FA7;
+}
+
+.experience {
+  margin-bottom: 10%;
+}
+
+.experience li {
+  font-size: 1.25rem;
+}
+
+span a {
+  color: #CE796B;
+}
 
 @media screen and (prefers-reduced-motion: no-preference) {
   html,
@@ -380,6 +434,13 @@ footer {
   /* navbar styling end */
 
   /* header styling */
+  #resume-clouds {
+    position: absolute;
+    top: 80%;
+    width: 100vw;
+    z-index: 999;
+  }
+
   #clouds {
     position: absolute;
     top: 90%;
