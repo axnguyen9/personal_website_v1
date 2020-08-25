@@ -156,7 +156,7 @@ nav a, nav img {
 
 #resume-clouds {
   position: absolute;
-  top: 87%;
+  top: 90%;
   width: 100vw;
   z-index: 999;
 }
@@ -399,6 +399,10 @@ span a {
   
   h2 {
     font-size: 1.875rem;
+  }
+
+  #exp-header {
+    font-size: 2.5rem;
   }
   /*
   h3 {
