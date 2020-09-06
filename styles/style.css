@@ -45,11 +45,13 @@ body {
 }
 
 main {
-  margin: 15% 10% 10% 10%;
+  margin: 5% 15%;
 }
 
 header {
-  margin: 2.5% 10%;
+  padding-bottom: 2.5%;
+  margin: 0 15%;
+  color: #ECD7CF;
 }
 
 /* style guide */
@@ -58,26 +60,27 @@ h1 {
   margin: 1rem 0;
   font-family: 'Karla', sans-serif;
   font-weight: bold;
-  font-size: 4rem;
-  width: 100%;
+  font-size: 3vw;
   color: #842640;
 }
 
 h2 {
   font-family: 'Karla', sans-serif;
   font-weight: bold;
-  font-size: 2.25rem;
+  font-size: 2vw;
 }
 
 h3 {
   font-family: 'Karla', sans-serif;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.5vw;
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: #E7AD99;
+  font-size: 1.125vw;
+  font-family: 'Martel', serif;
 }
 
 a:hover {
@@ -88,32 +91,26 @@ a:hover {
 p {
   font-family: 'Martel', serif;
   font-weight: normal;
-  font-size: 1.25rem;
+  font-size: 1.25vw;
 }
 
 li {
   font-family: 'Martel', serif;
   font-weight: normal;
-  font-size: 1.125rem;
+  font-size: 1.125vw;
 }
 
 blockquote {
   font-family: 'Martel', serif;
+  font-size: 1vw;
 }
 
-.light-pink {
-  color: #ECD7CF;
-}
 /* style guide end */
 
 /* navbar styling */
 nav {
-  font-family: 'Karla', sans-serif;
-  font-weight: bold;
-  font-size: 1.5rem;
-  color: #32161F;
-  height: 20vh;
-  margin: 0 2.5% 2.5% 2.5%;
+  height: 10vh;
+  margin: 0 5%;
   padding-top: 2.5%;
   display: flex;
   justify-content: space-between;
@@ -121,6 +118,9 @@ nav {
 }
 
 nav a, nav img {
+  font-family: 'Karla', sans-serif;
+  font-weight: bold;
+  font-size: 1.5vw;
   height: 100%;
 }
 
@@ -140,7 +140,7 @@ nav a, nav img {
 }
 
 #current {
-  border-bottom: 2px solid #E7AD99;
+  color: #188FA7;
 }
 /* navbar styling end */
 
@@ -148,28 +148,6 @@ nav a, nav img {
 .gradient-container {
   background: rgb(17,62,106);
   background: linear-gradient(180deg, rgba(17,62,106,1) 0%, rgba(93,46,78,1) 50%, rgba(132,38,64,1) 80%);
-}
-
-.clouds-container {
-  position: relative;
-}
-
-#resume-clouds {
-  position: absolute;
-  top: 90%;
-  width: 100vw;
-  z-index: 999;
-}
-
-#clouds {
-  position: absolute;
-  top: 97%;
-  width: 100vw;
-  z-index: 999;
-}
-
-header {
-  padding-bottom: 20%;
 }
 
 header img {
@@ -180,15 +158,6 @@ header img {
   color: #CE796B;
 }
 
-#email {
-  text-decoration: underline;
-  transition: .3s ease;
-}
-
-#email:hover {
-  color: #188FA7;
-}
-
 .socials {
   display: flex;
   justify-content: flex-start;
@@ -196,15 +165,19 @@ header img {
   width: 100%;
 }
 
-.socials a {
+.socials a, .socials p {
   display: block;
-  margin-right: 2.5%;
+  margin-right: 1vw;
 }
 
 .socials img {
   width: 1.5rem;
 }
 /* header styling end */
+
+#divider {
+  width: 100%;
+}
 
 /* card styling */
 .card-container {
@@ -290,10 +263,6 @@ footer {
   justify-content: center;
 }
 
-#footer-socials a {
-  margin: 0 1rem;
-}
-
 #back-to-top {
   color: #E7AD99;
 }
@@ -306,27 +275,17 @@ footer {
 /* ABOUT.HTML CSS */
 /* about.html org links */
 .extracurriculars {
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 
 .organizations a {
+  color: black;
   display: block;
   margin: 2rem 0;
 }
 
 .organizations a:hover {
   transition: .3s ease;
-}
-
-.organizations h2 {
-  display: inline-block;
-  margin: 0 1rem 0 0;
-  margin-right: 1rem;
-}
-
-.organizations img {
-  display: inline-block;
-  width: 1.5rem;
 }
 
 #wicc:hover {
@@ -394,32 +353,24 @@ span a {
 
 @media (max-width: 480px) {
   h1 {
-    font-size: 3rem;
+    font-size: 10vw;
   }
   
   h2 {
-    font-size: 1.875rem;
+    font-size: 8vw;
   }
-
-  #exp-header {
-    font-size: 2.5rem;
-  }
-  /*
+  
   h3 {
-    font-size: 1.125rem;
+    font-size: 6.5vw;
   }
   
-  p {
-    font-size: 1rem;
+  p, a, li {
+    font-size: 6vw;
   }
   
-  li {
-    font-size: .75rem;
-  }*/
-
   /* navbar styling */
   nav {
-    font-size: 1.125rem;
+    font-size: 4vw;
   }
 
   .text {
@@ -429,6 +380,10 @@ span a {
 }
 
 @media (min-width: 1000px) {
+  main {
+    margin: 5%;
+  }
+
   /* navbar styling */
   .links {
     width: 25%;
@@ -438,22 +393,8 @@ span a {
   /* navbar styling end */
 
   /* header styling */
-  #resume-clouds {
-    position: absolute;
-    top: 80%;
-    width: 100vw;
-    z-index: 999;
-  }
-
-  #clouds {
-    position: absolute;
-    top: 90%;
-    width: 100vw;
-    z-index: 999;
-  }
-
   header {
-    padding-bottom: 10%;
+    margin: 0 5%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -461,11 +402,11 @@ span a {
   }
   
   header img {
-    width: 50%;
+    width: 30%;
   }
   
   header section {
-    width: 40%;
+    width: 60%;
     margin: 0 5%;
   }
   /* header styling end */
