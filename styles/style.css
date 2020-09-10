@@ -80,7 +80,7 @@ a {
   text-decoration: none;
   color: #E7AD99;
   font-size: 1.125vw;
-  font-family: 'Martel', serif;
+  font-family: 'Karla', sans-serif;
 }
 
 a:hover {
@@ -97,7 +97,7 @@ p {
 li {
   font-family: 'Martel', serif;
   font-weight: normal;
-  font-size: 1.125vw;
+  font-size: 1.25vw;
 }
 
 blockquote {
@@ -162,16 +162,13 @@ header img {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
   width: 100%;
 }
 
 .socials a, .socials p {
   display: block;
   margin-right: 1vw;
-}
-
-.socials img {
-  width: 1.5rem;
 }
 /* header styling end */
 
@@ -181,22 +178,35 @@ header img {
 
 /* card styling */
 .card-container {
+  width: 100%;
+  color: black;
+}
+
+.card-container h2 {
+  margin-bottom: 0.5rem;
+}
+
+.card-container p {
+  margin-top: 0;
+  margin-bottom: 5%;
+}
+
+.image-container {
   display: block;
   border-radius: 10px;
   width: 100%;
   padding-bottom: 100%;
-  margin-bottom: 5%;
   position: relative;
 }
 
-.card-container img {
+.image-container img {
   width: 100%;
   border-radius: 10px;
   position: absolute;
   top: 0; bottom: 0; left: 0; right: 0;
 }
 
-.card-container .card-overlay {
+.card-overlay {
   border-radius: 10px;
   position: absolute;
   top: 0; bottom: 0; left: 0; right: 0;
@@ -206,20 +216,15 @@ header img {
   transition: .5s ease;
 }
 
-.card-container:hover .card-overlay {
-  color: black;
-  opacity: .9;
+.card-container:hover {
   cursor: pointer;
+  color: black;
 }
 
-.text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 80%;
-  text-align: center;
+.card-container:hover .card-overlay {
+  opacity: .9;
 }
+
 
 /* card overlay background-colors: */
 #pigpocket {
@@ -323,7 +328,8 @@ footer {
 }
 
 #here {
-  color: #CE796B;
+  font-size: 3vw;
+  color: #E7AD99;
   text-decoration: underline;
 }
 
@@ -336,12 +342,8 @@ footer {
   margin-bottom: 10%;
 }
 
-.experience li {
-  font-size: 1.25rem;
-}
-
 span a {
-  color: #CE796B;
+  color: #188FA7;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -367,13 +369,21 @@ span a {
   p, a, li {
     font-size: 6vw;
   }
-  
+
   /* navbar styling */
   nav {
-    font-size: 4vw;
+    font-size: 6.5vw;
   }
 
   .text {
+    display: none;
+  }
+
+  #here {
+    font-size: 10vw;
+  }
+
+  .socials p {
     display: none;
   }
 
@@ -381,7 +391,7 @@ span a {
 
 @media (min-width: 1000px) {
   main {
-    margin: 5%;
+    margin: 5% 15%;
   }
 
   /* navbar styling */
@@ -394,7 +404,7 @@ span a {
 
   /* header styling */
   header {
-    margin: 0 5%;
+    margin: 0 15%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -421,10 +431,14 @@ span a {
   }
 
   .card-container {
-    border-radius: 10px;
     width: 45%;
-    padding-bottom: 45%;
     margin-bottom: 5%;
+  }
+
+  .image-container {
+    border-radius: 10px;
+    width: 100%;
+    padding-bottom: 100%;
     position: relative;
   }
   /* card styling end */
