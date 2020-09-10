@@ -366,7 +366,7 @@ span a {
   }
   
   p, a, li {
-    font-size: 4vw;
+    font-size: 5vw;
   }
 
   /* navbar styling */
@@ -384,7 +384,7 @@ span a {
 
   .socials {
     flex-direction: column;
-    
+    align-items: flex-start;
   }
 
   .socials p {
