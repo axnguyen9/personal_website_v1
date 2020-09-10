@@ -120,11 +120,14 @@ nav {
 nav a, nav img {
   font-family: 'Karla', sans-serif;
   font-weight: bold;
-  font-size: 1.5vw;
+  font-size: 1vw;
   height: 100%;
 }
 
 .links {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
   padding-right: 2rem;
 }
 
@@ -371,7 +374,7 @@ span a {
 
   /* navbar styling */
   nav a {
-    font-size: 6.5vw;
+    font-size: 5vw;
   }
 
   .text {
@@ -399,6 +402,10 @@ span a {
   }
 
   /* navbar styling */
+  nav a {
+    font-size: 1.5vw;
+  }
+  
   .links {
     width: 25%;
     display: flex;
