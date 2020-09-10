@@ -162,7 +162,6 @@ header img {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  flex-wrap: wrap;
   width: 100%;
 }
 
@@ -371,7 +370,7 @@ span a {
   }
 
   /* navbar styling */
-  nav {
+  nav a {
     font-size: 6.5vw;
   }
 
@@ -381,6 +380,11 @@ span a {
 
   #here {
     font-size: 10vw;
+  }
+
+  .socials {
+    flex-direction: column;
+    
   }
 
   .socials p {
