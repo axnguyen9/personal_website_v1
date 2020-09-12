@@ -10,101 +10,141 @@
 </head>
 
 <body>
-  <a name="top"></a>
-  <div class="gradient-container">
+  <img src="./images/banner.png" id="banner" />
+  <div class="content">
+    <a name="top"></a>
     <nav>
-      <a href="/"><img src="./images/sig.png" /></a>
+      <a href="/" id="name-logo">anna nguyen</a>
       <div class="links">
-        <a href="/" id="current">WORK</a>
-        <a href="about">ABOUT</a>
-        <a href="resume">RESUME</a>
+        <a href="/" id="current">work</a>
+        <a href="about">about</a>
+        <a href="resume">resume</a>
       </div>
     </nav>
 
     <header>
       <img src="./images/self.png" />
       <section>
-        <h2>heyo, 👋 i'm <span id="name">Anna Nguyen</span></h2>
-        <p>Studying CS + Design, Fashion Studies minor @ Cornell. </p>
-        <p>Currently empowering communities @ Engineering World Health, @ Pigpocket!</p>
+        <h2>heyo, 👋 i'm <span id="name">anna</span></h2>
+        <p>A CS + Design major, Fashion Studies minor @ Cornell University. </p>
+        <p>Dedicated to empowering myself and others through design, tech, and social impact.</p>
         <div class="socials">
           <a href="mailto:axn3@cornell.edu" id="email">axn3@cornell.edu</a>
-          <p>||</p>
           <a href="https://github.com/axnguyen9">github</a>
-          <p>||</p>
           <a href="https://www.linkedin.com/in/axnguyen/">linkedin</a>
-          <p>||</p>
           <a href="https://www.instagram.com/missbanannamilk/">medium</a>
         </div>
       </section>
     </header>
-  </div>
-  <img id="divider" src="./images/midway.png" />
-  <main>
-    <h1>projects:</h1>
-    <!-- project cards -->
-    <section class="cards">
-      <a class="card-container" target="_blank">
-        <div class="image-container">
-          <img src="./images/pigpocket.png" />
-          <div class="card-overlay" id="pigpocket"></div>
-        </div>
-        <h2>Pigpocket Website</h2>
-        <p>Summer 202 Webdev</p>
-      </a>
-      <a class="card-container" target="_blank">
-        <div class="image-container">
-          <img src="./images/flowerish.png" />
-          <div class="card-overlay" id="flowerish"></div>
-        </div>
-        <h2>flowerish</h2>
-        <p>TecHacks Best Activism Track</p>
-      </a>
-      <a class="card-container" target="_blank">
-        <div class="image-container">
-          <img src="./images/nexthealth.png" />
-          <div class="card-overlay" id="nexthealth"></div>
-        </div>
-        <h2>Next Health</h2>
-        <p>HackDuke IDEATE Designathon</p>
-      </a>
-      <a class="card-container" href="https://medium.com/@axn3/netflix-concept-reliving-our-best-moments-d16a32367970"
-        target="_blank">
-        <div class="image-container">
-          <img src="./images/netflix.png" />
-          <div class="card-overlay" id="netflix"></div>
-        </div>
-        <h2>Netflix Bookmarks Concept</h2>
-        <p>Product design case study</p>
-      </a>
-      <a class="card-container" target="_blank">
-        <div class="image-container">
-          <img src="./images/artwall.png" />
-          <div class="card-overlay" id="artwall"></div>
-        </div>
-        <h2>Art Wall</h2>
-        <p>Gallery of my current art</p>
-      </a>
-    </section>
-  </main>
 
-  <footer>
-    <img src="/images/footer.png" id="footer-graphic" />
-    <div class="footer-container">
-      <h3><a href="#top" id="back-to-top">BACK TO TOP</a></h3>
-      <p>&copy; 2020 Anna Nguyen</p>
-      <div class="socials" id="footer-socials">
-        <a href="https://github.com/axnguyen9">github</a>
-        <p>||</p>
-        <a href="https://www.linkedin.com/in/axnguyen/">linkedin</a>
-        <p>||</p>
-        <a href="https://www.instagram.com/missbanannamilk/">medium</a>
+    <main>
+      <h1>projects:</h1>
+      <!-- project cards -->
+      <section class="cards">
+        <div class="card-container">
+          <a class="link-container" target="_blank">
+            <div class="image-container">
+              <img src="./images/pigpocket.png" />
+              <div class="card-overlay" id="pigpocket"></div>
+            </div>
+          </a>
+          <div class="blurb">
+            <h2>Pigpocket Website</h2>
+            <h4>Summer 2020 web development internship</h4>
+            <p>Improving financial literacy at younger ages
+              through a simplified personal finance mobile app +
+              website.</p>
+            <a class="more">read</a>
+          </div>
+        </div>
+        <div class="card-container">
+          <a class="link-container" href="https://devpost.com/software/flowerish" target="_blank">
+            <div class="image-container">
+              <img src="./images/flowerish.png" />
+              <div class="card-overlay" id="flowerish"></div>
+            </div>
+          </a>
+          <div class="blurb">
+            <h2>flowerish</h2>
+            <h4>TecHacks Best Activism Track</h4>
+            <p>Encouraging environmental literacy
+              through digestible content while simultaneously
+              calling for action.</p>
+            <a class="more" href="https://devpost.com/software/flowerish" target="_blank">view</a>
+          </div>
+        </div>
+        <div class="card-container">
+          <a class="link-container" href="https://devpost.com/software/next-health-me43bk" target="_blank">
+            <div class="image-container">
+              <img src="./images/nexthealth.png" />
+              <div class="card-overlay" id="nexthealth"></div>
+            </div>
+          </a>
+          <div class="blurb">
+            <h2>Next Health</h2>
+            <h4>HackDuke IDEATE Best Beginner Health Track</h4>
+            <p>Empowering users to take control of
+              their health and communicate
+              effectively with their doctors.</p>
+            <a class="more" href="https://devpost.com/software/next-health-me43bk" target="_blank">view</a>
+          </div>
+        </div>
+        <div class="card-container">
+          <a class="link-container"
+            href="https://medium.com/@axn3/netflix-concept-reliving-our-best-moments-d16a32367970" target="_blank">
+            <div class="image-container">
+              <img src="./images/netflix.png" />
+              <div class="card-overlay" id="netflix"></div>
+            </div>
+          </a>
+          <div class="blurb">
+            <h2>Netflix Bookmarks Concept</h2>
+            <h4>Product design case study</h4>
+            <p>A feature enabling users to “bookmark”
+              scenes and return to for reminiscing,
+              individualizing the watching experience.</p>
+            <a class="more" href="https://medium.com/@axn3/netflix-concept-reliving-our-best-moments-d16a32367970"
+              target="_blank">read</a>
+          </div>
+        </div>
+        <div class="card-container" id="bottom-card">
+          <a class="link-container" href="http://art-wall.herokuapp.com/" target="_blank">
+            <div class="image-container">
+              <img src="./images/artwall.png" />
+              <div class="card-overlay" id="artwall"></div>
+            </div>
+          </a>
+          <div class="blurb">
+            <h2>Art Wall</h2>
+            <h4>Gallery of my illustrations & art</h4>
+            <p>A journey of my art, with the
+              option of temporarily editing tags to
+              images or uploading new images.</p>
+            <a class="more" href="http://art-wall.herokuapp.com/" target="_blank">browse</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+    <footer>
+      <div class="footer-container">
+        <a href="#top" class="top">↑ TOP</a>
+        <p>&copy; 2020 Anna Nguyen</p>
+        <div class="socials">
+          <a href="https://github.com/axnguyen9">github</a>
+          <a href="https://www.linkedin.com/in/axnguyen/">linkedin</a>
+          <a href="https://www.instagram.com/missbanannamilk/">medium</a>
+        </div>
+        <div class="quote">
+          <blockquote>"We are more alike, my friends</blockquote>
+          <blockquote>Than we are unalike."</blockquote>
+          <blockquote><cite>– Maya Angelou</cite></blockquote>
+        </div>
       </div>
-      <blockquote>"We are more alike, my friends</blockquote>
-      <blockquote>Than we are unalike."</blockquote>
-      <blockquote><cite>– Maya Angelou</cite></blockquote>
-    </div>
-  </footer>
+    </footer>
+  </div>
+  <img src="/images/footer.png" id="banner" />
 </body>
 
 </html>
