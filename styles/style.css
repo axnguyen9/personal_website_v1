@@ -121,6 +121,7 @@ blockquote {
 /* navbar styling */
 #name-logo {
   color: #CE796B;
+  margin-bottom: 1rem;
 }
 
 /* need to manually change navbar font */
@@ -283,44 +284,6 @@ footer {
     scroll-behavior: smooth;
   }
 }
-
-/*
-@media (max-width: 480px) {
-  h1 {
-    font-size: 10vw;
-  }
-  
-  h2 {
-    font-size: 7.5vw;
-  }
-  
-  h3 {
-    font-size: 6.5vw;
-  }
-  
-  p, a, li {
-    font-size: 5vw;
-  }
-*/
-  /* navbar styling */
-  /*
-  nav a {
-    font-size: 5vw;
-  }
-  #here {
-    font-size: 10vw;
-  }
-
-  .socials {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .socials p {
-    display: none;
-  }
-
-}*/
 
 @media (min-width: 1000px) {
   .content{
