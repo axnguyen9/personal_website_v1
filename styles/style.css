@@ -87,18 +87,21 @@ a {
   color: #842640;
   font-size: 1rem;
   font-family: 'Karla', sans-serif;
+  text-decoration: none;
 }
 
 a:hover {
   cursor: pointer;
   transition: .3s ease;
   color: #188FA7;
+  text-decoration: underline;
 }
 
 p {
-  font-family: 'Martel', serif;
+  font-family: 'Karla', sans-serif;
   font-weight: normal;
   font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 li {
@@ -109,19 +112,13 @@ li {
 
 blockquote {
   font-family: 'Martel', serif;
-  font-size: .5rem;
+  font-size: .75rem;
   margin: .25rem 0;
 }
 
 /* style guide end */
 
 /* navbar styling */
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 #name-logo {
   color: #CE796B;
 }
@@ -131,19 +128,19 @@ nav a {
   text-decoration: none;
   font-family: 'Karla', sans-serif;
   font-weight: bold;
-  font-size: 1rem;
   display: block;
-  padding: .25rem .5rem;
+  margin-right: .5rem;
 }
 
 .links {
   width: 50%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 #current {
   color: #188FA7;
+  text-decoration: underline;
 }
 /* navbar styling end */
 
@@ -156,8 +153,8 @@ header img {
   width: 100%;
 }
 
-#name {
-  color: #CE796B;
+#anna {
+  font-family: 'Martel', serif;
 }
 
 .socials {
@@ -169,7 +166,7 @@ header img {
 
 .socials a {
   display: block;
-  padding: .5rem;
+  margin-right: 1rem;
 }
 /* header styling end */
 
@@ -224,7 +221,10 @@ header img {
 }
 
 .more:hover {
+  transition: .3s ease;
   border: 1px solid #188FA7;
+  background-color: #188FA7;
+  color: #f5f5f5;
 }
 
 /* card overlay background-colors: */
@@ -265,32 +265,9 @@ footer {
 
 
 /* ABOUT.HTML CSS */
-/* about.html org links */
-/* need to manually refont */
-.org-link {
-  font-family: 'Martel', serif;
+.about-header {
+  margin-bottom: 10%;
 }
-
-#wicc:hover {
-  color: #82e7d5;
-}
-
-#sis:hover {
-  color: #ef8e80;
-}
-
-#pe:hover {
-  color: #df9011;
-}
-
-#ewh:hover {
-  color: #2d6694;
-}
-
-#rtc:hover {
-  color: #3cb7e9;
-}
-/* about.html org links end */
 
 /* about.html illustrations section */
 .illustrations-container img {
@@ -299,40 +276,6 @@ footer {
   border-radius: 10px;
 }
 /* about.html illustrations section end */
-
-/* RESUME.html CSS */
-#here {
-  font-size: 2.25rem;
-  
-}
-
-.experience {
-  margin-bottom: 5%;
-}
-
-span a {
-  font-size: 1.5rem;
-}
-
-.skills-list-container {
-  margin-bottom: 5%;
-  padding: 2.5%;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px 2.5px #E5E5E5;
-}
-
-.skills-list {
-  padding: 0;
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.skills-list li {
-  width: 50%;
-}
-
-/* RESUME.html CSS ends */
 
 @media screen and (prefers-reduced-motion: no-preference) {
   html,
@@ -385,28 +328,26 @@ span a {
   }
 
   /* navbar styling */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
   nav a {
     font-size: 1.5rem;
-    padding: .25rem 1rem;
+    margin-right: 1.5rem;
   }
+
+  .links {
+    justify-content: flex-end;
+  }
+
   /* navbar styling end */
 
   /* header styling */
   header {
-    margin: 5% 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-  }
-  
-  header img {
-    width: 25%;
-  }
-  
-  header section {
     width: 60%;
-    margin: 0 5%;
   }
   /* header styling end */
 
@@ -418,13 +359,10 @@ span a {
     margin: 5% 0;
   }
 
-  .link-container {
+  .link-container, .blurb {
     width: 45%;
   }
 
-  .blurb {
-    width: 45%;
-  }
   /* card styling end */
 
   /* footer styling */
@@ -441,11 +379,6 @@ span a {
     margin: 2.5% 0;
   }
   /* footer styling ends */
-
-  /* RESUME.HTML */
-  .skills-list-container {
-    margin-bottom: 2.5%;
-  }
 
   /* about.html illustrations section */
   .illustrations-container {
