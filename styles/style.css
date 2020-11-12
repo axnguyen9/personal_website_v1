@@ -161,6 +161,7 @@ header img {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
   width: 100%;
 }
 
@@ -191,7 +192,6 @@ header img {
 
 .image-container {
   position: relative;
-  display: flex;
   border-radius: 10px;
   width: 100%;
 }
