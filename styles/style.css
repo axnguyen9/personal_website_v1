@@ -39,6 +39,24 @@
        url('../fonts/martel-v4-latin-regular.svg#Martel') format('svg'); /* Legacy iOS */
 }
 
+@keyframes pulse-out {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes pulse-in {
+  from {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
 #banner {
   width: 100%;
 }
@@ -87,27 +105,24 @@ a {
   color: #842640;
   font-size: 1rem;
   font-family: 'Karla', sans-serif;
-  text-decoration: none;
+  -webkit-animation: pulse-in .5s forwards;
+  animation: pulse-in .5s forwards;
 }
 
 a:hover {
   cursor: pointer;
   transition: .3s ease;
-  color: #188FA7;
   text-decoration: underline;
+  color: #188FA7;
+  -webkit-animation: pulse-out .5s forwards;
+  animation: pulse-out .5s forwards;
 }
 
-p {
+p, li {
   font-family: 'Karla', sans-serif;
   font-weight: normal;
   font-size: 1rem;
   line-height: 1.5rem;
-}
-
-li {
-  font-family: 'Martel', serif;
-  font-weight: normal;
-  font-size: 1rem;
 }
 
 blockquote {
@@ -121,16 +136,17 @@ blockquote {
 /* navbar styling */
 #name-logo {
   color: #CE796B;
-  margin-bottom: 2.25%;
 }
 
 /* need to manually change navbar font */
 nav a {
-  text-decoration: none;
-  font-family: 'Karla', sans-serif;
   font-weight: bold;
   display: block;
-  margin-right: .5rem;
+  text-decoration: none;
+}
+
+.links a {
+  margin-left: .5rem;
 }
 
 .links {
@@ -154,7 +170,7 @@ header img {
   width: 100%;
 }
 
-#anna {
+#martel-text {
   font-family: 'Martel', serif;
 }
 
@@ -191,8 +207,12 @@ header img {
   margin-top: 0;
 }
 
+.link-container, .link-container:hover {
+  animation: none;
+  -webkit-animation: none;
+}
+
 .image-container {
-  position: relative;
   border-radius: 10px;
   width: 100%;
 }
@@ -202,17 +222,14 @@ header img {
   border-radius: 10px;
 }
 
-.card-overlay {
-  border-radius: 10px;
-  position: absolute;
-  top: 0; bottom: 0; left: 0; right: 0;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
+button {
+  border: none;
+  background: none;
+  padding: 0;
 }
 
-.link-container:hover .card-overlay {
-  opacity: .8;
+button a, button a:hover {
+  text-decoration: none;
 }
 
 .more {
@@ -227,28 +244,6 @@ header img {
   background-color: #188FA7;
   color: #f5f5f5;
 }
-
-/* card overlay background-colors: */
-#pigpocket {
-  background-color:  #D2C1C5;
-}
-
-#netflix {
-  background-color: #E4BABC;
-}
-
-#flowerish {
-  background-color: #B8C3C8;
-}
-
-#nexthealth {
-  background-color: #D8E8E5;
-}
-
-#artwall {
-  background-color: #E9EEF2;
-}
-/* card overlay ends */
 
 /* footer styling */
 footer {
@@ -268,6 +263,14 @@ footer {
 /* ABOUT.HTML CSS */
 .about-header {
   margin-bottom: 10%;
+}
+
+#bold-p-text {
+  font-weight: bold;
+}
+
+#highlight-p-text {
+  background-color: #ecd7d0;
 }
 
 /* about.html illustrations section */
@@ -299,11 +302,14 @@ footer {
   
   nav a {
     font-size: 1.5rem;
-    margin-right: 1.5rem;
   }
 
   .links {
     justify-content: flex-end;
+  }
+
+  .links a {
+    margin-left: 1.5rem;
   }
 
   /* navbar styling end */
