@@ -3,81 +3,77 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Anna Nguyen</title>
-  <link rel="icon" type="image/png" href="../images/logo.png" />
-  <link rel="stylesheet" type="text/css" href="../styles/style.css" media="all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Anna Nguyen</title>
+    <link rel="icon" type="image/png" href="/images/logo.png" />
+    <!-- Bootstrap v5.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../styles/style.css" media="all" />
 </head>
 
 <body>
-  <img src="../images/banner.png" id="banner" alt="illustrated floral decorative banner" />
-  <div class="content">
-    <a name="top"></a>
-    <nav>
-      <a href="/" id="name-logo">anna nguyen</a>
-      <div class="links">
-        <a href="/">work</a>
-        <a href="../about" id="current">about</a>
-        <a href="https://drive.google.com/file/d/13UAHrn1CFpjNG9F62qy2G92JbZwENw6s/view?usp=sharing"
-          target="_blank">resume</a>
-        <a href="../art">art</a>
+  <div class="m-md-3 p-5">
+    <nav class="navbar navbar-expand-md navbar-light">
+      <a href="/" class="navbar-brand mx-3">anna nguyen</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="/" class="mx-3">work</a>
+          </li>
+          <li class="nav-item">
+            <a href="../about" id="current" class="mx-3">about</a>
+          </li>
+          <li class="nav-item">
+            <a href="" target="_blank" class="mx-3">
+              resume</a>
+          </li>
+          <li class="nav-item">
+            <a href="../art" class="mx-3">art</a>
+          </li>
+        </ul>
       </div>
     </nav>
 
-    <header>
-      <section class="about-header">
-        <p>Thank you for visiting :) My name is Anna Nguyen, and I'm
-          a third-year undergrad at Cornell University studying computer
-          science and information science (UX/UI). Originally a CS major,
-          I stumbled into design after taking an Intro to Product Design class and
-          fell in love with how versatile it could be. I found that I loved
-          <span id="highlight-p-text">connecting with people and communities and
-            hearing all their different stories</span>, which inspires me to
-          better inform my own decisions as a developer and designer and to
-          continually strive to become a better ally. Using the skills I have,
-          I hope to support underserved communties and
-          to continuously listen, understand, and empathize.
-        </p>
-        <p>Some fun facts about me: I love skincare & fashion. I make beaded flower
-          rings in my free time (hit me up if you want one!!). And my
-          great-grandma was supposedly a part of Vietnamese royalty.
-        </p>
-        <h2 id="martel-text">what i've been up to:</h2>
-        <ul>
-          <li><span id="bold-p-text">Software member @ the <a href="https://ewh.engineering.cornell.edu/"
-                target="_blank">Engineering
-                World Health Project Team</a></span>, building tech solutions in partnership with health organizations
-          </li>
-          <li><span id="bold-p-text">Community Vice President @ <a href="https://wicc.cornell.edu/"
-                target="_blank">Women in
-                Computing
-                @ Cornell</a></span>, working to build an inclusive CIS community</li>
-          <li><span id="bold-p-text">President @ the <a href="https://www.thesmartisstrongfoundation.org/"
-                target="_blank">Smart
-                is Strong Foundation</a></span>, combatting gender inequality in education</li>
-          <li><span id="bold-p-text">Curriculum developer & data manager @ <a href="https://prisonerexpress.org/"
-                class="org-link" target="_blank">Prisoner Express</a></span>, providing information and
-            community for incarcerated
-            individuals</li>
-        </ul>
-        <h2 id="martel-text">past:</h2>
-        <ul>
-          <li>Curriculum developer & instructor @ The Coding School</li>
-          <li>Design & Social co-director @ WICC</li>
-          <li><span id="bold-p-text">Web developer @ Guide to Justice</span>, centralizing resources to better help
-            people self-educate and support the Black Lives Matter movement
-          </li>
-          <li><span id="bold-p-text">Website development intern @ <a href="https://pigpocketapp.com/" class="org-link"
-                target="_blank">Pigpocket LLC.</a></span>, encouraging financial literacy</li>
-          <!-- <li><span id="bold-p-text">Frontend engineer intern @ <a href="https://meet-klara-flow.webflow.io/"
-                target="_blank">Meet Klara</a></span>, matching skincare/hair care recommendations using data science
-          </li> -->
-        </ul>
-      </section>
-      <img src="../images/self.png" alt="an illustrated image of myself" />
-    </header>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="../images/headshot.JPEG" class="rounded mx-auto img-fluid" alt="" />
+        </div>
+        <div class="col-md-6 my-auto">
+          <h1 class="display-3">About me</h1>
+          <p>My name is Anna Nguyen,
+            and I'm a third-year undergrad at Cornell University
+            studying Information Science (UX/UI) and minoring in 
+            Computer Science. 
+          </p>
+          <p>
+            My background lies in the intersection between design
+            and technology, meaning I design experiences with a 
+            technical approach and I'm comfortable communicating 
+            across development and design teams to solve problems.
+          </p>
+          <p>
+            I love connecting with people and hearing their stories,
+            and hope to further explore user research/engingeering,
+            frontend development, visual design, and accessibility 
+            design. Using the skills I have, I hope to support underserved communties and
+            to continuously listen, understand, and empathize.
+          </p>
+          <p>Currently, I am a product designer at Cornell Hack4Impact.
+            Outside of design, you can find me playing fashion diva,
+            selling my soul to people's pet pictures, or
+            DIY-ing bead daisy rings (hit me up if you want one). 
+          </p>
+          <p>Have a lovely day and thank you for visiting :)</p>
+        </div>
+      </div>
+    </div>
+   
 
-    <footer>
+    <!-- <footer>
       <div class="footer-container">
         <a href="#top" class="top">↑ TOP</a>
         <p>&copy; 2020 Anna Nguyen</p>
@@ -92,9 +88,8 @@
           <blockquote><cite>– Maya Angelou</cite></blockquote>
         </div>
       </div>
-    </footer>
+    </footer> -->
   </div>
-  <img src="../images/footer.png" id="banner" alt="illustrated floral decorative banner" />
 </body>
 
 </html>

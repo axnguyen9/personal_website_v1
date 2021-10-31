@@ -89,6 +89,12 @@ body {
   font-weight: bold;
 }
 
+.btn:hover {
+  border: 3px solid #188FA7 !important;
+  background-color: #188FA7;
+  color: #F5F5F5 !important;
+}
+
 .btn-outline-primary {
   color: #842640 !important;
 }
@@ -114,6 +120,15 @@ a {
   color: #842640;
 }
 
+a:hover {
+  color: #188FA7;
+}
+
 .socials a {
   text-decoration: underline;
+}
+
+#current {
+  color: #188FA7;
+  border-bottom: 1px solid #188FA7;
 }
