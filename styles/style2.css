@@ -1,0 +1,367 @@
+/* karla-regular - latin */
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/karla-v13-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Karla'), local('Karla-Regular'),
+       url('../fonts/karla-v13-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/karla-v13-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/karla-v13-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/karla-v13-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/karla-v13-latin-regular.svg#Karla') format('svg'); /* Legacy iOS */
+}
+/* karla-700 - latin */
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/karla-v13-latin-700.eot'); /* IE9 Compat Modes */
+  src: local('Karla Bold'), local('Karla-Bold'),
+       url('../fonts/karla-v13-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/karla-v13-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/karla-v13-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/karla-v13-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/karla-v13-latin-700.svg#Karla') format('svg'); /* Legacy iOS */
+}
+
+/* martel-regular - latin */
+@font-face {
+  font-family: 'Martel';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/martel-v4-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Martel'), local('Martel-Regular'),
+       url('../fonts/martel-v4-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/martel-v4-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/martel-v4-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/martel-v4-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/martel-v4-latin-regular.svg#Martel') format('svg'); /* Legacy iOS */
+}
+
+@keyframes pulse-out {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes pulse-in {
+  from {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+#banner {
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: #F5F5F5;
+}
+
+.content {
+  margin: 10%;
+}
+
+/* style guide */
+/* section title */
+h1 {
+  margin: 1rem 0;
+  font-family: 'Karla', sans-serif;
+  font-weight: bold;
+  font-size: 2.25rem;
+  color: #CE796B;
+}
+
+/* card titles, navbar buttons, name logo */
+h2 {
+  font-family: 'Karla', sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* top header one-liner */
+h3 {
+  font-family: 'Karla', sans-serif;
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+
+/* card subtitles, button */
+h4 {
+  font-family: 'Karla', sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+a {
+  color: #842640;
+  font-size: 1rem;
+  font-family: 'Karla', sans-serif;
+  -webkit-animation: pulse-in .5s forwards;
+  animation: pulse-in .5s forwards;
+}
+
+a:hover {
+  cursor: pointer;
+  transition: .3s ease;
+  text-decoration: underline;
+  color: #188FA7;
+  -webkit-animation: pulse-out .5s forwards;
+  animation: pulse-out .5s forwards;
+}
+
+p, li {
+  font-family: 'Karla', sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+blockquote {
+  font-family: 'Martel', serif;
+  font-size: .75rem;
+  margin: .25rem 0;
+}
+
+/* style guide end */
+
+/* navbar styling */
+#name-logo {
+  color: #CE796B;
+}
+
+/* need to manually change navbar font */
+nav a {
+  font-weight: bold;
+  display: block;
+  text-decoration: none;
+}
+
+.links a {
+  margin-left: .5rem;
+}
+
+.links {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#current {
+  color: #188FA7;
+  text-decoration: underline;
+}
+/* navbar styling end */
+
+/* header styling */
+header {
+  margin: 10% 0;
+}
+
+header img {
+  width: 100%;
+}
+
+#martel-text {
+  font-family: 'Martel', serif;
+}
+
+.socials {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.socials a {
+  display: block;
+  margin-right: 1rem;
+}
+/* header styling end */
+
+/* card styling */
+.card-container {
+  width: 100%;
+  margin: 15% 0;
+  color: black;
+}
+
+.card-container h2 {
+  margin-bottom: 0.5rem;
+}
+
+.card-container h4 {
+  color: #656565;
+}
+
+.card-container p {
+  margin-top: 0;
+}
+
+.link-container, .link-container:hover {
+  animation: none;
+  -webkit-animation: none;
+}
+
+.image-container {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.image-container img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+button {
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+button a, button a:hover {
+  text-decoration: none;
+}
+
+.more {
+  padding: .25rem 1rem;
+  border: 1px solid #842640;
+  border-radius: 10px;
+}
+
+.more:hover {
+  transition: .3s ease;
+  border: 1px solid #188FA7;
+  background-color: #188FA7;
+  color: #f5f5f5;
+}
+
+/* footer styling */
+footer {
+  margin-top: 15%;
+}
+
+.top {
+  text-decoration: none;
+}
+
+.quote {
+  margin: 5% 0;
+}
+/* footer styling ends */
+
+
+/* ABOUT.HTML CSS */
+.about-header {
+  margin-bottom: 10%;
+}
+
+#bold-p-text {
+  font-weight: bold;
+}
+
+#highlight-p-text {
+  background-color: #ecd7d0;
+}
+
+/* about.html illustrations section */
+.illustrations-container img {
+  width: 100%;
+  margin-bottom: 5%;
+  border-radius: 10px;
+}
+/* about.html illustrations section end */
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  html,
+  body {
+    scroll-behavior: smooth;
+  }
+}
+
+@media (min-width: 1000px) {
+  .content{
+    margin: 2.5% 15%;
+  }
+
+  /* navbar styling */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav a {
+    font-size: 1.5rem;
+  }
+
+  .links {
+    justify-content: flex-end;
+  }
+
+  .links a {
+    margin-left: 1.5rem;
+  }
+
+  /* navbar styling end */
+
+  /* header styling */
+  header {
+    width: 60%;
+  }
+  /* header styling end */
+
+  /* card styling */
+  .card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5% 0;
+  }
+
+  .link-container, .blurb {
+    width: 45%;
+  }
+
+  /* card styling end */
+
+  /* footer styling */
+  footer {
+    margin-top: 5%;
+    text-align: center;
+  }
+
+  footer .socials {
+    justify-content: center;
+  }
+
+  .quote {
+    margin: 2.5% 0;
+  }
+  /* footer styling ends */
+
+  /* about.html illustrations section */
+  .illustrations-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .illustrations-container img {
+    width: 30%;
+    margin-bottom: 5%;
+    border-radius: 10px;
+  }
+  /* about.html illustrations section end */
+}
