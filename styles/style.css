@@ -77,6 +77,10 @@
        url('../fonts/merriweather-v25-latin-700.svg#Merriweather') format('svg'); /* Legacy iOS */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #F5F5F5;
   background-image: url("../images/gradient_background.png");
