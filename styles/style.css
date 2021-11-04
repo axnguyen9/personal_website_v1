@@ -77,6 +77,34 @@
        url('../fonts/merriweather-v25-latin-700.svg#Merriweather') format('svg'); /* Legacy iOS */
 }
 
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@-moz-keyframes rotate {
+  100% { -moz-transform: rotate(360deg);}
+}
+
+@-webkit-keyframes rotate {
+  100% { -webkit-transform: rotate(360deg);}
+}
+
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -87,10 +115,25 @@ body {
   background-repeat: no-repeat;
 }
 
+.img-container {
+  overflow: hidden;
+}
+#home-illustration {
+  animation: 6s float ease-in-out infinite;
+  /* animation: 90s rotate ease-in-out infinite; */
+}
+
+#animation-button {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
 .btn {
   border: 3px solid #842640 !important;
   border-radius: .75rem;
   font-weight: bold;
+  transition: .5s;
 }
 
 .btn:hover {
