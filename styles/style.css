@@ -90,19 +90,35 @@
   }
 }
 
-@-moz-keyframes rotate {
-  100% { -moz-transform: rotate(360deg);}
-}
-
-@-webkit-keyframes rotate {
-  100% { -webkit-transform: rotate(360deg);}
-}
-
-@keyframes rotate {
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+@-moz-keyframes float {
+  0% {
+    transform: translateY(0px);
   }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.paused{
+  -webkit-animation-play-state:paused !important;
+  -moz-animation-play-state:paused !important;
+  -o-animation-play-state:paused !important; 
+  animation-play-state:paused !important;
 }
 
 html {
@@ -112,21 +128,33 @@ html {
 body {
   background-color: #F5F5F5;
   background-image: url("../images/gradient_background.png");
-  background-repeat: no-repeat;
 }
 
 .img-container {
   overflow: hidden;
+  position: relative;
 }
 #home-illustration {
   animation: 6s float ease-in-out infinite;
   /* animation: 90s rotate ease-in-out infinite; */
 }
 
+/* Animation pause + play button styling */
 #animation-button {
   position: absolute;
-  left: 0;
-  top: 0;
+  top: 10%;
+  right: 0;
+  border: none;
+  z-index: 1;
+}
+.hide {
+ display: none;
+}
+.show {
+  display: inline;
+}
+.controls {
+  width: 100%;
 }
 
 .btn {
